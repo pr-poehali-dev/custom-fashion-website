@@ -23,7 +23,7 @@ export default function Index() {
           <div className="mb-16">
             <Button 
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://t.me/vivangelduuust', '_blank')}
+              onClick={() => window.open('https://t.me/zzzzzzzzzzizzzz', '_blank')}
             >
               <Icon name="MessageCircle" className="mr-3" size={24} />
               Заказать через Telegram
@@ -147,7 +147,7 @@ export default function Index() {
           <div className="mb-12">
             <Button 
               className="bg-background text-foreground hover:bg-background/90 px-12 py-4 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://t.me/vivangelduuust', '_blank')}
+              onClick={() => window.open('https://t.me/zzzzzzzzzzizzzz', '_blank')}
             >
               <Icon name="MessageCircle" className="mr-3" size={24} />
               Написать в Telegram
