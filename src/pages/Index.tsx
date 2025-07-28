@@ -99,16 +99,7 @@ export default function Index() {
               </div>
             </div>
             
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-secondary/50 to-accent/50 rounded-lg">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <Icon name="Zap" className="mx-auto mb-4 text-primary" size={48} />
-                    <p className="text-muted-foreground font-medium">Extraordinary результат</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
