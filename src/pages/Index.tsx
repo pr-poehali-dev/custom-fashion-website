@@ -8,12 +8,27 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-foreground mb-8">
-            vivangelduuust
-            <span className="block text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-normal mt-4">
-              Кастомная дизайнерская одежда
-            </span>
-          </h1>
+          <div className="mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6">
+              <span className="block bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent font-medium">
+                viv
+              </span>
+              <span className="block bg-gradient-to-r from-purple-300 via-blue-300 to-teal-300 bg-clip-text text-transparent font-medium -mt-2">
+                angel
+              </span>
+              <span className="block bg-gradient-to-r from-teal-300 via-green-300 to-yellow-300 bg-clip-text text-transparent font-medium -mt-2">
+                duuust
+              </span>
+            </h1>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="h-0.5 w-12 bg-gradient-to-r from-pink-200 to-purple-200 rounded-full"></div>
+              <Icon name="Sparkles" className="text-purple-300" size={20} />
+              <div className="h-0.5 w-12 bg-gradient-to-r from-purple-200 to-blue-200 rounded-full"></div>
+            </div>
+            <p className="text-xl md:text-2xl text-muted-foreground font-light italic">
+              кастомная дизайнерская одежда
+            </p>
+          </div>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Представьте, что у вас есть любимая, но уже надоевшая вещь. Возможно, это старая куртка, джинсы, лонгслив. Что, если бы вы могли дать ей новую жизнь, превратив в нечто уникальное и отражающее вашу индивидуальность?
           </p>
