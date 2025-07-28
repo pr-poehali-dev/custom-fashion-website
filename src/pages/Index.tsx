@@ -14,9 +14,11 @@ export default function Index() {
               Кастомная дизайнерская одежда
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Создаём уникальные образы, воплощающие вашу индивидуальность. 
-            Каждое изделие — произведение искусства, созданное вручную с безупречным вниманием к деталям.
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+            Представьте, что у вас есть любимая, но уже надоевшая вещь. Возможно, это старая куртка, джинсы, лонгслив. Что, если бы вы могли дать ей новую жизнь, превратив в нечто уникальное и отражающее вашу индивидуальность?
+          </p>
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+            Наш сайт создан именно для этого! Мы специализируемся на кастомизации ваших вещей, превращая обыденное в extraordinary. Забудьте о массовом производстве – здесь каждая вещь становится произведением искусства, созданным специально для вас, а так же есть модели которые мы покупаем в магазине и сами кастомизируем. <span className="font-medium text-primary">Важно: любая одежда купленная у нас будет оригинальной.</span>
           </p>
           
           {/* Telegram CTA */}
@@ -32,54 +34,36 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Gallery Section */}
+      {/* Services Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-center text-foreground mb-16">
-            Наши работы
+            Наши услуги
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-            <Card className="group overflow-hidden border-none shadow-lg bg-card rounded-lg">
-              <div className="aspect-[3/4] overflow-hidden rounded-t-lg">
-                <img 
-                  src="img/fa18711a-aedd-4532-89b7-28cdb61366d2.jpg" 
-                  alt="Luxury fashion piece"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+            <Card className="group border-none shadow-lg bg-card rounded-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <div className="mb-6">
+                <Icon name="Palette" className="mx-auto text-primary" size={48} />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-medium text-card-foreground mb-2">Эксклюзивное пальто</h3>
-                <p className="text-muted-foreground">Роскошный кашемир, индивидуальный крой</p>
-              </div>
+              <h3 className="text-xl font-medium text-card-foreground mb-4">Кастомизация ваших вещей</h3>
+              <p className="text-muted-foreground leading-relaxed">Превращаем ваши старые любимые вещи в уникальные произведения искусства</p>
             </Card>
 
-            <Card className="group overflow-hidden border-none shadow-lg bg-card rounded-lg">
-              <div className="aspect-[3/4] overflow-hidden rounded-t-lg">
-                <img 
-                  src="img/c1026c6e-68c5-48d7-891b-8d215a83877c.jpg" 
-                  alt="Custom designer jacket"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+            <Card className="group border-none shadow-lg bg-card rounded-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <div className="mb-6">
+                <Icon name="ShoppingBag" className="mx-auto text-primary" size={48} />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-medium text-card-foreground mb-2">Дизайнерский жакет</h3>
-                <p className="text-muted-foreground">Авторский дизайн, премиальные материалы</p>
-              </div>
+              <h3 className="text-xl font-medium text-card-foreground mb-4">Готовые кастомы</h3>
+              <p className="text-muted-foreground leading-relaxed">Покупаем базовые вещи и создаём из них оригинальные дизайнерские модели</p>
             </Card>
 
-            <Card className="group overflow-hidden border-none shadow-lg bg-card rounded-lg md:col-span-2 lg:col-span-1">
-              <div className="aspect-[3/4] overflow-hidden rounded-t-lg">
-                <img 
-                  src="img/0b909831-2cbf-485d-84e2-68a700737359.jpg" 
-                  alt="Design process workspace"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+            <Card className="group border-none shadow-lg bg-card rounded-lg p-8 text-center hover:shadow-xl transition-shadow duration-300 md:col-span-2 lg:col-span-1">
+              <div className="mb-6">
+                <Icon name="Sparkles" className="mx-auto text-primary" size={48} />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-medium text-card-foreground mb-2">Творческий процесс</h3>
-                <p className="text-muted-foreground">От идеи до воплощения</p>
-              </div>
+              <h3 className="text-xl font-medium text-card-foreground mb-4">100% Оригинальность</h3>
+              <p className="text-muted-foreground leading-relaxed">Каждая вещь уникальна и неповторима — никаких копий или массового производства</p>
             </Card>
           </div>
         </div>
@@ -91,29 +75,29 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-light text-foreground mb-8">
-                Философия бренда
+                Как это работает
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Мы верим, что одежда — это способ самовыражения. Каждое изделие создаётся с учётом 
-                ваших пожеланий, особенностей фигуры и образа жизни.
+                У каждого есть вещи, которые когда-то были любимыми, но теперь просто висят в шкафу. 
+                Мы даём им вторую жизнь, создавая что-то совершенно новое и уникальное.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Используем только премиальные ткани и фурнитуру. Каждый шов выполнен вручную 
-                мастерами с многолетним опытом в высокой моде.
+                Наша команда использует различные техники кастомизации: от ручной росписи и вышивки 
+                до аппликаций и декоративных элементов. Результат всегда превосходит ожидания.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Icon name="Crown" className="mr-4 text-primary" size={24} />
-                  <span className="text-muted-foreground">Индивидуальный подход к каждому клиенту</span>
+                  <Icon name="Recycle" className="mr-4 text-primary" size={24} />
+                  <span className="text-muted-foreground">Даём новую жизнь старым вещам</span>
                 </div>
                 <div className="flex items-center">
-                  <Icon name="Scissors" className="mr-4 text-primary" size={24} />
-                  <span className="text-muted-foreground">Ручная работа высочайшего качества</span>
+                  <Icon name="Brush" className="mr-4 text-primary" size={24} />
+                  <span className="text-muted-foreground">Уникальные техники кастомизации</span>
                 </div>
                 <div className="flex items-center">
-                  <Icon name="Sparkles" className="mr-4 text-primary" size={24} />
-                  <span className="text-muted-foreground">Эксклюзивные дизайны и материалы</span>
+                  <Icon name="Star" className="mr-4 text-primary" size={24} />
+                  <span className="text-muted-foreground">Каждая вещь — единственная в своём роде</span>
                 </div>
               </div>
             </div>
@@ -122,8 +106,8 @@ export default function Index() {
               <div className="aspect-square bg-gradient-to-br from-secondary/50 to-accent/50 rounded-lg">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <Icon name="Heart" className="mx-auto mb-4 text-primary" size={48} />
-                    <p className="text-muted-foreground font-medium">Создано с любовью</p>
+                    <Icon name="Zap" className="mx-auto mb-4 text-primary" size={48} />
+                    <p className="text-muted-foreground font-medium">Extraordinary результат</p>
                   </div>
                 </div>
               </div>
@@ -136,11 +120,11 @@ export default function Index() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-foreground text-background">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light mb-8">
-            Начните создание вашего образа
+            Готовы к трансформации?
           </h2>
           <p className="text-lg text-background/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Свяжитесь с нами для консультации и обсуждения вашего индивидуального заказа. 
-            Мы ответим на все вопросы и поможем воплотить ваши идеи в жизнь.
+            Напишите нам в Telegram и расскажите о своей идее! Мы обсудим все детали, 
+            стоимость и сроки. Превратим вашу обычную вещь в extraordinary шедевр.
           </p>
           
           {/* Main Telegram CTA */}
